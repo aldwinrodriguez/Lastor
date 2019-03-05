@@ -1,14 +1,20 @@
 body {
-    background-color: rgb(36, 35, 35);
-    font-family: 'Changa', sans-serif;
+    /* background-color: rgb(36, 35, 35); */
+    font-family: 'Acme', sans-serif;
 }
+
+/* nav */
 
 nav img {
     width: 100%;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: black;
+}
+
 .navbar {
-    padding: 1.2% 3% .5%;
+    padding: 2% 5% .8%;
 }
 
 .navbar-brand {
@@ -16,9 +22,26 @@ nav img {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color:black;
+    color: black;
 }
 
-.navbar-light .navbar-nav .nav-item .phone:hover {
-    color: red;
+.block {
+    display: block;
+}
+
+.btn-warning:hover {
+    color: #d61d1d;
+    background-color: #ffd145;
+}
+
+/* services */
+
+#services {
+    padding: 1% 5% 1%;
+}
+
+/* about */
+
+#about {
+    padding: 1% 5% 1%;
 }
