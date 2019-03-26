@@ -1,0 +1,37 @@
+.container-fluid {
+    padding: 0;
+}
+
+section#aForm {
+    padding: 3% 2%;
+    /* background-color: antiquewhite; */
+    text-align: center;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.textInput {
+    width: 50%;
+    text-align: center;
+    border: 2px solid rgb(182, 176, 176);
+    border-radius:2px;
+}
+
+button.sub {
+    padding: .3% 6%;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+button.sub:hover {
+    color:white;
+    background-color: rgb(46, 43, 43);
+}
+
+
+
+
