@@ -23,6 +23,28 @@
 
     <!-- My CSS-->
     <link rel="stylesheet" href="/styles/home.css" type="text/css">
+    <link rel="stylesheet" href="/styles/estimate.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,25 +60,40 @@
                     <li class="nav-item ml-2 mr-2">
                         <a class="nav-link" href="/index.html">Home</a>
                     </li>
+
                     <li class="nav-item dropdown ml-2 mr-2">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Services
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Roof</a>
-                            <a class="dropdown-item" href="#">Sheet Rock</a>
-                            <a class="dropdown-item" href="#">Door Installs</a>
-                            <a class="dropdown-item" href="#">Trim Work</a>
-                            <a class="dropdown-item" href="#">Painting</a>
-                            <a class="dropdown-item" href="#">Laminant Floor</a>
-                            <a class="dropdown-item" href="#">Hardwood Floor</a>
-                            <a class="dropdown-item" href="#">Windows Installs</a>
-                            <a class="dropdown-item" href="#">Bathroom</a>
-                            <a class="dropdown-item" href="#">Kitchen</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Roof</a></li>
+                            <li><a class="dropdown-item" href="#">Sheet Rock</a></li>
+                            <li><a class="dropdown-item" href="#">Door Installs</a></li>
+                            <li><a class="dropdown-item" href="#">Trim Work</a></li>
+                            <li><a class="dropdown-item" href="#">Painting</a></li>
+                            <li><a class="dropdown-item" href="#">Laminant Floor</a></li>
+                            <li><a class="dropdown-item" href="#">Hardwood Floor</a></li>
+                            <li><a class="dropdown-item" href="#">Windows Installs</a></li>
+                            <li class="dropdown-submenu w-100">
+                                <a class="test dropdown-item" href="#">New dropdown <i
+                                        class="fas fa-angle-right"></i></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Bathroom</a></li>
+                                    <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                                    <!-- <li class="dropdown-submenu">
+                                        <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">3rd level dropdown</a></li>
+                                            <li><a href="#">3rd level dropdown</a></li>
+                                        </ul>
+                                    </li> -->
+                                </ul>
+                            </li>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something</a>
-                        </div>
+                        </ul>
+                    </li>
                     <li class="nav-item ml-2 mr-2ml-2 mr-2">
                         <a class="nav-link" href="#">About us</a>
                     </li>
@@ -97,7 +134,16 @@
 
 
         <!-- Bootstrap JS-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        <script>
+            $(document).ready(function () {
+                $('.dropdown-submenu a.test').on("click", function (e) {
+                    $(this).next('ul').toggle();
+                    e.stopPropagation();
+                    e.preventDefault();
+                });
+            });
+        </script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -105,7 +151,7 @@
         </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+        </script> -->
 </body>
 
 </html>
