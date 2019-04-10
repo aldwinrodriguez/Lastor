@@ -1,8 +1,10 @@
 body {
-    /* background-color: rgb(36, 35, 35); */
-    font-family: 'Acme', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    background: #ffffff url("/images/AdobeStock_89308963.jpeg") no-repeat fixed center;
+    background-size: 100%;
 }
-.container-fluid {
+
+div .container-fluid {
     padding: 0;
 }
 
@@ -12,20 +14,31 @@ nav img {
     width: 100%;
 }
 
+nav {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+nav .bold {
+    font-weight: bolder;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: black;
 }
 
 .navbar {
-    padding: 2% 5% .8%;
+    padding: 1.4% 1% .8% 6%;
+    background-color: rgba(143, 129, 129, 0.692);
 }
 
 .navbar-brand {
     width: 10em;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: black;
 }
 
 .block {
@@ -47,4 +60,18 @@ nav img {
 
 #about {
     padding: 1% 5% 1%;
+}
+
+.testing {
+    height: 100vh;
+}
+
+.back-color {
+    background-color: whitesmoke;
+}
+
+footer {
+    background-color: rgb(54, 50, 50);
+    font-size: 1.1em;
+    color: whitesmoke;
 }

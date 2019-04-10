@@ -3,9 +3,14 @@
 }
 
 section#aForm {
-    padding: 3% 2%;
-    /* background-color: antiquewhite; */
+    width: 60%;
+    margin: 2% auto;
+    padding: 1% 0 2%; 
     text-align: center;
+    border: 2px solid rgb(182, 176, 176);
+    border-radius:10px;
+    font-size: 1.1em;
+    background-color: rgba(204, 199, 199, 0.959);
 }
 
 label {
@@ -13,25 +18,40 @@ label {
 }
 
 .textInput {
-    width: 50%;
+    width: 90%;
     text-align: center;
     border: 2px solid rgb(182, 176, 176);
     border-radius:2px;
+    font-size: .9em;
+    background-color: rgba(245, 241, 241, 0.993);
+
+}
+
+.textInput:focus {
+    box-shadow: 0px 0px 20px rgb(173, 165, 165);
 }
 
 button.sub {
+    width: 25%;
     padding: .3% 6%;
     border: 0px solid transparent;
     border-radius: 10px;
     font-size: 1.2em;
     transition: 0.5s;
-}
-
-button.sub:hover {
     color:white;
     background-color: rgb(46, 43, 43);
 }
 
+button.sub:hover {
+    color: black;
+    background-color: rgb(145, 145, 148);
+
+}
+
+.itemLabel {
+    font-size: 1.1em;
+    font-weight: bolder;
+}
 
 
 
