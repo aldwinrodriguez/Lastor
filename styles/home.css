@@ -1,6 +1,6 @@
 body {
     font-family: 'Mukta', sans-serif;
-    background: #ffffff url("/images/AdobeStock_89308963.jpeg") no-repeat fixed center;
+    background: #ffffff url("/images/AdobeStock_123262382.jpeg") no-repeat fixed center;
     background-size: 100%;
 }
 
@@ -34,9 +34,10 @@ nav .bold {
 
 .navbar {
     padding: 1.4% 3% .8% 8%;
-    background-color: rgb(226, 224, 224);
-    position: sticky;
-    top:0;
+    /* background-color: rgb(226, 224, 224); */
+    background-color: #c4c4c4f8;
+    /* position: sticky;
+    top:0; */
     box-shadow: 0px 0px 10px rgb(68, 67, 67);
 }
 
@@ -56,7 +57,25 @@ nav .bold {
 /* services */
 
 #services {
-    padding: 1% 5% 1%;
+    padding: 1% 5% 5%;
+    background-color: #c4c4c4f8;
+    border: 0px solid transparent;
+    box-shadow: 0px 0px 10px rgb(68, 67, 67);
+    color: rgb(43, 43, 43);
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 4em;
+    /* font-weight: bolder; */
+    font-family: 'Merriweather', serif;
+    text-align: left;
+    text-shadow: -2px 2px .5px black;
+}
+
+span.service{ 
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 /* about */
@@ -78,4 +97,9 @@ footer {
     background-color: rgb(54, 50, 50);
     font-size: 1.1em;
     color: whitesmoke;
+}
+
+img.imgContainer {
+    width: 100%;
+    height: 220px;
 }
