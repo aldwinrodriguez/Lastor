@@ -98,7 +98,7 @@ img.imgContainer {
     position: relative;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #about {
         width: 100%;
     }
@@ -106,4 +106,8 @@ img.imgContainer {
 
 .container-fluid {
     padding: 0;
+}
+
+.font-bigger{
+    font-size: 1.2em;
 }
