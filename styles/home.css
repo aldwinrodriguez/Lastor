@@ -4,19 +4,10 @@ body {
     background-size: cover;
 }
 
-div .container-fluid {
-    padding: 0;
-}
-
-a, a:hover {
-    text-decoration: none;
-    color: rgb(0, 119, 255);
-}
-
-/* nav */
-
-nav img {
-    width: 100%;
+footer {
+    background: linear-gradient(135deg, #f0d787ee 0%, #f3957be8 100%);
+    font-size: 1.1em;
+    color: black;
 }
 
 nav {
@@ -25,21 +16,22 @@ nav {
     font-size: 1em;
 }
 
-nav .bold {
-    font-weight: bolder;
+a, a:hover {
+    text-decoration: none;
+    color: rgb(0, 119, 255);
 }
 
-.navbar-light .navbar-nav .nav-link {
-    color: black;
+/* nav */
+nav img {
+    width: 100%;
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link:hover {
     color: black;
 }
 
 .navbar {
     padding: 1.4% 3% .8% 8%;
-    /* background-color: rgb(226, 224, 224); */
     background-color: #c4c4c4fb;
     position: sticky;
     top: 0;
@@ -51,17 +43,12 @@ nav .bold {
     width: 10em;
 }
 
-.block {
-    display: block;
-}
-
 .btn-warning:hover {
     color: #d61d1d;
     background-color: #ffd145;
 }
 
 /* services */
-
 #services {
     padding: 1% 5% 4%;
     background: linear-gradient(135deg, #f0d787ee 0%, #f3957be8 100%);
@@ -74,16 +61,10 @@ nav .bold {
 
 h2.heading {
     font-size: 4em;
-    /* font-weight: bolder; */
     font-family: 'Merriweather', serif;
     text-align: left;
     text-shadow: -1px 1px .5px black;
     margin-bottom: 5%;
-}
-
-.fonting {
-    font-family: 'Merriweather', serif;
-    font-size: 2em;
 }
 
 span.service {
@@ -91,8 +72,17 @@ span.service {
     font-weight: bold;
 }
 
-/* about */
+img.imgContainer {
+    width: 100%;
+    height: 220px;
+}
 
+.fonting {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+}
+
+/* about */
 #about {
     margin: 0;
     padding: 0 1%;
@@ -101,38 +91,19 @@ span.service {
     width: 30%;
     position: absolute;
     right: 0;
-    /* top: -40px; */
 }
 
-.testing {
+.mainBg {
     height: 100vh;
     position: relative;
-}
-
-.back-color {
-    background-color: whitesmoke;
-}
-
-footer {
-    /* background-color: rgb(153, 151, 151);
-     */
-    /* background-color: #c4c4c4f8; */
-    background: linear-gradient(135deg, #f0d787ee 0%, #f3957be8 100%);
-    font-size: 1.1em;
-    color: black;
-}
-
-img.imgContainer {
-    width: 100%;
-    height: 220px;
-}
-
-div.bigger {
-    font-size: 1.1em;
 }
 
 @media only screen and (max-width: 600px) {
     #about {
         width: 100%;
     }
+}
+
+.container-fluid {
+    padding: 0;
 }
