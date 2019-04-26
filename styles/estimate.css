@@ -13,6 +13,8 @@ section#aForm {
     section#aForm {
         width: 100%;
         margin: 0 auto;
+        height: 100vh;
+        border-radius: 0;
     }
 }
 

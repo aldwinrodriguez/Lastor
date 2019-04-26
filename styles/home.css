@@ -50,7 +50,7 @@ nav img {
 
 /* services */
 #services {
-    padding: 1% 5% 4%;
+    padding: 5% 5% 4%;
     background: linear-gradient(135deg, #f0d787ee 0%, #f3957be8 100%);
     border: 0px solid transparent;
     box-shadow: 0px 0px 10px rgb(68, 67, 67);
@@ -91,6 +91,7 @@ img.imgContainer {
     width: 30%;
     position: absolute;
     right: 0;
+    overflow: auto;
 }
 
 .mainBg {
