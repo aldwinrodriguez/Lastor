@@ -1,6 +1,6 @@
 body {
     font-family: 'Mukta', sans-serif;
-    background: #ffffff url("images/AdobeStock_123262382.jpeg") no-repeat fixed center;
+    background: #ffffff url("../images/AdobeStock_123262382.jpeg") no-repeat fixed center;
     background-size: cover;
 }
 
@@ -8,7 +8,7 @@ div .container-fluid {
     padding: 0;
 }
 
-a {
+a, a:hover {
     text-decoration: none;
     color: rgb(0, 119, 255);
 }
@@ -42,7 +42,7 @@ nav .bold {
     /* background-color: rgb(226, 224, 224); */
     background-color: #c4c4c4fb;
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1;
     box-shadow: 0px 0px 10px rgb(68, 67, 67);
 }
@@ -86,7 +86,7 @@ h2.heading {
     font-size: 2em;
 }
 
-span.service{ 
+span.service {
     font-size: 1.8em;
     font-weight: bold;
 }
@@ -102,7 +102,7 @@ span.service{
     position: absolute;
     right: 0;
     /* top: -40px; */
-    }
+}
 
 .testing {
     height: 100vh;
@@ -135,4 +135,4 @@ div.bigger {
     #about {
         width: 100%;
     }
-  }
+}
